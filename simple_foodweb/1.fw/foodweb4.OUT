@@ -1,0 +1,11 @@
+% learning down/2
+% clauses: 8
+down_1(b,d).
+down(d,s4).
+down(d,s3).
+down_1(a,d).
+down(c,s2).
+down(c,s1).
+down_1(a,c).
+down(A,B):-down_1(A,C),down(C,B).
+0.047 seconds

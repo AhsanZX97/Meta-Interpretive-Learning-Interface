@@ -1,0 +1,3 @@
+#!/bin/tcsh
+
+./yfw foodweb4 a

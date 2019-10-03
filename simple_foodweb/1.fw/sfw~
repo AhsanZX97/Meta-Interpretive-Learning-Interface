@@ -1,0 +1,35 @@
+#!/bin/tcsh
+
+if ($4 == "") then
+  if ( $3 == "" ) then
+    if ( $2 == "" ) then
+  	yap << %
+  	[foodweb1].
+  	$1.
+  
+  X is cputime, write(X), write(' seconds').
+%
+    else
+  	yap << %
+  	[$1].
+	$2.
+  
+  X is cputime, write(X), write(' seconds').
+%
+    endif
+  else
+#  	yap << %
+#  	[yap_metagol_d].
+#  	learn_seq([$1,$2,$3],[],[],B).
+  
+  X is cputime, write(X), write(' seconds').
+%
+  endif
+else
+#	yap << %
+#	[yap_metagol_d].
+#	learn_seq([$1,$2,$3,$4],[],[],B).
+
+X is cputime, write(X), write(' seconds').
+%
+endif

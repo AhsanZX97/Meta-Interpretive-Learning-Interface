@@ -1,0 +1,5 @@
+%down_1(f,c).
+%down_1(e,d).
+%down_1(b,d).
+%down_1(a,d).
+%down_1(a,c).

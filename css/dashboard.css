@@ -1,0 +1,226 @@
+body {
+  font-size: .875rem;
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
+/* Shorten a string if it's longer than the width */
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.navbar .brand, .navbar .nav > li > a {
+    color: #dc3545 !important;
+}
+.navbar .brand, .navbar .nav > li > a:hover {
+    color: #dc3545 !important;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 0;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+  background: #0B3142;
+}
+
+.sidebar-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 48px; /* Height of navbar */
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  padding-right: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+		background: #0B3142; 
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #bfbfbf;
+}
+
+.sidebar .nav-link.active {
+  color: #FF9F1C;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+
+.navbar-brand {
+  padding-top: .75rem;
+  padding-left: .75rem;
+  padding-bottom: .75rem;
+}
+.navbar {
+	background: #0F5257;
+	color: #fff;
+	li {float: left;
+	list-style-type:none;}
+}
+.nav-item .li {
+	list-style-type: none;
+}
+
+thead {
+	color: #465561;
+}
+
+.metagolbg {
+	background-color:#eeeeee;
+}
+
+.cytoscape {
+	padding-left: ($spacer * .5) !important;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited{
+	color: #fff;
+	background-color: #FF9F1C;
+	border-color: #FF9F1C; !important
+}
+
+.btn-primary:hover{
+	background-color: #E8911A;
+	border-color: #E8911A;
+}
+
+.btn-danger{
+	background-color: #E71D36;
+	border-color: #E71D36; !important
+}
+
+.btn-success{
+	background-color: #2EC4B6;
+	border-color: #2EC4B6; !important
+}
+.btn-success:hover{
+	background-color: #41C9BC;
+	border-color: #41C9BC; !important
+}
+
+.btn-success:disabled {
+	background-color: #ccc;
+	border-color: #ccc; !important
+}
+
+
+/*
+ * Utilities
+ */
+
+.border-top { border-top: 1px solid #e5e5e5; }
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+/* Cards */
+.card {
+	-webkit-box-shadow: 0 0 40px rgba(0,0,0,.1);
+	        box-shadow: 0 0 40px rgba(0,0,0,.1);
+	background-color: #FDFFFC;
+	border-radius: 3px;
+	border: none;
+	position: relative;
+	margin-bottom: 30px;
+	border-top: 2px solid #2EC4B6;
+}
+
+.yellowcard {
+	border-top: 2px solid #FF9F1C;
+}
+
+.rosecard {
+	border-top: 2px solid #E71D36;
+}
+
+.bluecard {
+	border-top: 2px solid #011627;
+}
+
+.powdercard {
+	border-top: 2px solid #FDFFFC;
+}
+
+.card .card-header,
+.card .card-footer,
+.card .card-body {
+	background-color: transparent;
+}
+.card .card-body {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.card .card-footer.card-footer-grey {
+	background-color: #fbfbfb;
+}
+.card .card-header {
+	border-bottom-color: #f9f9f9;
+	line-height: 30px;
+	-ms-flex-item-align: center;
+	    -ms-grid-row-align: center;
+	    align-self: center;
+	width: 100%;
+}
+.card .card-header .btn {
+	padding: 2px 15px;
+	font-size: 12px;
+	border-radius: 30px;
+}
+.card .card-header .form-control {
+	height: 30px;
+	font-size: 12px;
+}
+.card .card-header .form-control + .input-group-btn .btn {
+	border-radius: 0 3px 3px 0;
+	margin-top: -3px;
+}
+.card .card-header .float-right .btn-group .btn {
+	border-radius: 30px !important;
+	padding-left: 13px !important;
+	padding-right: 13px !important;
+}
+.card .card-header h4 {
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin: 2px 0 -2px 0;
+	font-family: 'Montserrat';
+	line-height: 30px;
+	color: #011627;
+}
+
+.card .card-header h4 a.unstyled {
+	font-size: 14px;
+}
+.card .card-footer {
+	background-color: transparent;
+	border: none;
+	padding-top: 0;
+}
+

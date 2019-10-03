@@ -1,0 +1,32 @@
+[atn@localhost 1.fw]$ ./sfw foodweb3 a
+Welcome to SWI-Prolog (threaded, 64 bits, version 7.3.35-40-gb17eead)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit http://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+true.
+
+% learning down/2
+% clauses: 8
+% clauses: 9
+% clauses: 10
+down(d,s4).
+down(d,s3).
+down(c,s2).
+down(c,s1).
+down(A,B):-down_1(A,C),down(C,B).
+down_1(f,c).
+down_1(e,d).
+down_1(b,d).
+down_1(a,d).
+down_1(a,c).
+true 
+159.844218477 seconds
+X = 159.844218477.
+
+
+% halt
+[atn@localhost 1.fw]$ 
+
